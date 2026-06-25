@@ -18,12 +18,19 @@ sample data**. There is no real company data in this repository.
 
 ## What's in the pack
 
-| File | What it is |
-|------|-----------|
-| **Contoso_Live_Prompt_Script.docx** | The presenter/runner script — exact copy-paste prompts for the Researcher agent, the Analyst agent, combining their output into a brief, and creating + connecting an agent in Agent Builder. |
-| **Contoso_Outage_Restoration_Tracker.xlsx** | Fictional storm-outage data (Outage Log + auto-calculating Summary). The Analyst agent reads this. |
-| **Contoso_Storm_Response_Playbook.docx** | A fictional procedures document — restoration priorities, roles, cadence, FAQ. The Researcher agent and your custom agent ground on this. |
-| **Contoso_Storm_Restoration_Brief_TEMPLATE.docx** | The one-page brief structure the agent fills. |
+| File | What it is | Download |
+|------|-----------|----------|
+| **Contoso_Live_Prompt_Script.docx** | The presenter/runner script — exact copy-paste prompts for the Researcher agent, the Analyst agent, combining their output into a brief, and creating + connecting an agent in Agent Builder. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Live_Prompt_Script.docx) |
+| **Contoso_Outage_Restoration_Tracker.xlsx** | Fictional storm-outage data (Outage Log + auto-calculating Summary). The Analyst agent reads this. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Restoration_Tracker.xlsx) |
+| **Contoso_Storm_Response_Playbook.docx** | A fictional procedures document — restoration priorities, roles, cadence, FAQ. The Researcher agent and your custom agent ground on this. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Response_Playbook.docx) |
+| **Contoso_Storm_Restoration_Brief_TEMPLATE.docx** | The one-page brief structure the agent fills. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Restoration_Brief_TEMPLATE.docx) |
+
+### 📥 Download all files
+
+- [Contoso_Live_Prompt_Script.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Live_Prompt_Script.docx)
+- [Contoso_Outage_Restoration_Tracker.xlsx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Restoration_Tracker.xlsx)
+- [Contoso_Storm_Response_Playbook.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Response_Playbook.docx)
+- [Contoso_Storm_Restoration_Brief_TEMPLATE.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Restoration_Brief_TEMPLATE.docx)
 
 ## The scenario
 

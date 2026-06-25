@@ -16,30 +16,16 @@ sample data**. There is no real company data in this repository.
 
 ---
 
-## What's in the pack
+## Scenarios
 
-| File | What it is | Download |
-|------|-----------|----------|
-| **Contoso_Live_Prompt_Script.docx** | The presenter/runner script — exact copy-paste prompts for the Researcher agent, the Analyst agent, combining their output into a brief, and creating + connecting an agent in Agent Builder. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Live_Prompt_Script.docx) |
-| **Contoso_Outage_Restoration_Tracker.xlsx** | Fictional storm-outage data (Outage Log + auto-calculating Summary). The Analyst agent reads this. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Restoration_Tracker.xlsx) |
-| **Contoso_Storm_Response_Playbook.docx** | A fictional procedures document — restoration priorities, roles, cadence, FAQ. The Researcher agent and your custom agent ground on this. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Response_Playbook.docx) |
-| **Contoso_Storm_Restoration_Brief_TEMPLATE.docx** | The one-page brief structure the agent fills. | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Restoration_Brief_TEMPLATE.docx) |
-
-### 📥 Download all files
-
-- [Contoso_Live_Prompt_Script.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Live_Prompt_Script.docx)
-- [Contoso_Outage_Restoration_Tracker.xlsx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Restoration_Tracker.xlsx)
-- [Contoso_Storm_Response_Playbook.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Response_Playbook.docx)
-- [Contoso_Storm_Restoration_Brief_TEMPLATE.docx](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Restoration_Brief_TEMPLATE.docx)
-
-## The scenario
+### Scenario 1 — Storm Response Brief Builder
 
 Contoso Energy is a fictional utility serving five regions — **Contoso North, South,
 East, Central, and West**. A storm has caused outages, and you need to (1) understand
 the data, (2) produce a daily restoration brief, and (3) build a reusable agent that
 does it on demand.
 
-## How to use it (≈ the flow in the prompt script)
+**How to use it (≈ the flow in the prompt script):**
 
 1. **Researcher agent** → read the Playbook → get the restoration approach + brief structure.
 2. **Analyst agent** → read the Outage Tracker → get the numbers (it can run Python on the data).
@@ -51,6 +37,53 @@ does it on demand.
 6. **Test & share** → run the test prompts, then share the agent to Teams.
 
 Open `Contoso_Live_Prompt_Script.docx` and copy each prompt directly.
+
+### Scenario 2 — Outage Response Advisor
+
+During outages, dispatchers and field staff need fast, consistent answers to one question:
+"what do we do right now?" The procedures live across six standard operating procedures (SOPs).
+
+The **Outage Response Advisor** agent reads the SOP library and, for any situation an
+operator describes, returns the right procedure — immediate actions first, then the steps,
+safety notes, and escalation thresholds — always citing which SOP it used.
+
+**How to use it:**
+
+1. **Agent Builder** → paste the agent description from `Contoso_Outage_Agent_Instructions_and_Scenario.docx`.
+2. **Connect documents** → add all six SOP files as Knowledge sources.
+3. **Test** → use the sample prompts (downed line, major storm, critical-care customer, etc.)
+   to demonstrate the agent searching the correct SOP and leading with safety.
+
+The SOP library covers:
+
+| SOP | Title |
+|-----|-------|
+| SOP-01 | Localized / Single-Circuit Outage |
+| SOP-02 | Major Storm / Widespread Outage |
+| SOP-03 | Downed Conductor / Public-Safety Hazard |
+| SOP-04 | Substation / Equipment Failure |
+| SOP-05 | Critical-Care / Life-Support Customer Outage |
+| SOP-06 | Planned Outage & Switching (Maintenance) |
+
+---
+
+## 📥 Downloads
+
+| File | Scenario | Download |
+|------|----------|----------|
+| **Contoso_Live_Prompt_Script.docx** | 1 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Live_Prompt_Script.docx) |
+| **Contoso_Outage_Restoration_Tracker.xlsx** | 1 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Restoration_Tracker.xlsx) |
+| **Contoso_Storm_Response_Playbook.docx** | 1 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Response_Playbook.docx) |
+| **Contoso_Storm_Restoration_Brief_TEMPLATE.docx** | 1 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Storm_Restoration_Brief_TEMPLATE.docx) |
+| **Contoso_Outage_Agent_Instructions_and_Scenario.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_Agent_Instructions_and_Scenario.docx) |
+| **Contoso_Outage_SOP_01_Localized_Outage.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_01_Localized_Outage.docx) |
+| **Contoso_Outage_SOP_02_Major_Storm.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_02_Major_Storm.docx) |
+| **Contoso_Outage_SOP_03_Downed_Line_Public_Safety.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_03_Downed_Line_Public_Safety.docx) |
+| **Contoso_Outage_SOP_04_Substation_Equipment_Failure.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_04_Substation_Equipment_Failure.docx) |
+| **Contoso_Outage_SOP_05_Critical_Care_Customer.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_05_Critical_Care_Customer.docx) |
+| **Contoso_Outage_SOP_06_Planned_Outage_Switching.docx** | 2 | [⬇ Download](https://github.com/AndrewConniff/ContosoEnergyAgentDemo/raw/main/Contoso_Outage_SOP_06_Planned_Outage_Switching.docx) |
+
+---
 
 ## Notes
 
